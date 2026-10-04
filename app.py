@@ -331,7 +331,7 @@ def page_results():
     st.subheader("Verification Report & Risk Summary")
     if "results" not in st.session_state:
         st.info("No audit running. Please complete the verification form first.")
-        if st.button("Go to Verification Form"):
+        if st.button("Go to Verification Form" , key="btn_result _go_to_verification"):
             st.session_state["page"] = "Verify Property"
             st.rerun()
         return
