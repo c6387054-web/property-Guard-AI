@@ -288,7 +288,7 @@ def page_dashboard():
             st.markdown("**3. Multi-Agent Audit**")
             st.caption("Inspect risk scores, area discrepancy delta charts, and download reports.")
     st.write("")
-    if st.button("Start New Verification", type="primary"):
+    if st.button("Start New Verification", type="primary", key="btn_start_new_verification"):
         st.session_state["page"] = "Verify Property"
         st.rerun()
 
